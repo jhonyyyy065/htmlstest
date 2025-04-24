@@ -11,6 +11,11 @@
       color:orange
     }
     </style>
+    <script>
+        function toggleImage(){
+            const img = document.getElementById('sampleImage');
+            img.style.display = img.style.display === 'none' ? 'block' : 'none';
+    </script>
 </head>
 
 <body>
@@ -18,9 +23,12 @@
     <p>本文
     <a href="https://www.youtube.com">ようつべのリンク<a>
     </p>
+    <button onclick="toggleImage()">
+        画像を切り替えるボタン
+    </button>
     <h1 class="jay">364364↓</h1>
     <p>
-    <img src="htmlstest/114514.jpeg" alt="バス"/>
+    <img id="sampleImage" src="htmlstest/114514.jpeg" alt="バス"/>
 </body>
 
 </html>

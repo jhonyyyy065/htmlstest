@@ -19,7 +19,7 @@
       function drawRectangle() {
         const canvas = document.getElementById('sampleCanvas');
         const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = 'blue';
         ctx.fillRect(10, 10, 100, 50);
       }
     </script>
@@ -35,6 +35,7 @@
         画像を消すボタン
     </button>
     <img id="sampleImage" src="114514.jpeg" alt="バス"/>
+    <canvas id="sampleCanvas" width="300" height="100" style="border:1px solid #000;"></canvas>
     <button onclick="drawRectangle()">
         四角を書くボタン
     </button>

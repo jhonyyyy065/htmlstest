@@ -16,6 +16,12 @@
           const img = document.getElementById('sampleImage');
           img.style.display = img.style.display === 'none' ? 'block' : 'none';
         }
+        function drawRectangle() {
+          const canvas = document.getElementById('sampleCanvas');
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = 'red';
+          ctx.fillRect(10, 10, 100, 50);
+        }
     </script>
 </head>
 
@@ -30,6 +36,9 @@
     <h1 class="jay">364364↓</h1>
     <p>
     <img id="sampleImage" src="114514.jpeg" alt="バス"/>
+    <button onclick="drawRectangle()">
+        四角を書くボタン
+    </button>
 </body>
 
 </html>

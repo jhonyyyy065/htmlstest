@@ -12,11 +12,9 @@
     }
     </style>
     <script>
-      function drawRectangle() {
-        const canvas = document.getElementById('sampleCanvas');
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'red';
-        ctx.fillRect(10, 10, 100, 50);
+      function toggleImage() {
+        const img = document.getElementById('sampleImage');
+        img.style.display = img.style.display === 'none' ? 'block' : 'none';
       }
       function drawRectangle() {
         const canvas = document.getElementById('sampleCanvas');

@@ -18,6 +18,12 @@
         ctx.fillStyle = 'red';
         ctx.fillRect(10, 10, 100, 50);
       }
+      function drawRectangle() {
+        const canvas = document.getElementById('sampleCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.fillRect(10, 10, 100, 50);
+      }
     </script>
 </head>
 
@@ -27,7 +33,9 @@
     <a href="https://www.youtube.com">ようつべのリンク<a>
     </p>
     <h1 class="jay">364364↓</h1>
-    <p>
+    <button onclick="toggleImage()">
+        画像を消すボタン
+    </button>
     <img id="sampleImage" src="114514.jpeg" alt="バス"/>
     <button onclick="drawRectangle()">
         四角を書くボタン
